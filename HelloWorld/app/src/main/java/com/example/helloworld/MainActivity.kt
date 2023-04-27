@@ -12,6 +12,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.helloworld.ui.theme.HelloWorldTheme
+import androidx.compose.ui.unit.dp
+import androidx.compose.foundation.layout.padding
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,7 +37,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     Surface(color = Color.Magenta) {
         Text(
             text = "Olá meu nome é $name!",
-            modifier = modifier
+            modifier = Modifier.padding(24.dp)
         )
     }
 }
